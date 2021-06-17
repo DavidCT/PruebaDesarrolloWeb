@@ -6,17 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-
+    <link href="estilo.css" rel="stylesheet">
     <title>Prueba Desarrollo</title>
 </head>
 
 <body>
     <div class="container">
-        <div class="row">
-            <div class="col">
-                <button id="btnInicio" type="button" class="btn btn-primary" onclick="obtenerDatosCliente()">Inicio Programa</button>
-            </div>
-        </div>
+            <form class="formularioLogin">
+                <div class="mb-3">
+                    <label for="lblCorreoElectronico" class="form-label">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="lblCorreoElectronico" aria-describedby="AyudaEmail">
+                    <div id="AyudaEmail" class="form-text">Introduzca su dirección de correo.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="lblPassword" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="lblPassword">
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
