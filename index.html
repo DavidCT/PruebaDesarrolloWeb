@@ -12,18 +12,10 @@
 
 <body>
     <div class="container">
-            <form class="formularioLogin">
-                <div class="mb-3">
-                    <label for="lblCorreoElectronico" class="form-label">Correo Electrónico</label>
-                    <input type="email" class="form-control" id="lblCorreoElectronico" aria-describedby="AyudaEmail">
-                    <div id="AyudaEmail" class="form-text">Introduzca su dirección de correo.</div>
-                </div>
-                <div class="mb-3">
-                    <label for="lblPassword" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="lblPassword">
-                </div>
-                <button type="submit" class="btn btn-primary">Enviar</button>
-            </form>
+        <button type="button" class="btn btn-primary" onclick="generarControlesDinamicos()">Crear Control</button>
+        <div id="controlesDinamicos">
+            <h1>Una prueba de controles dinámicos desde Javascript</h1>
+        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
